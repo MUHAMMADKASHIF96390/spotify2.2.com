@@ -1,0 +1,271 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Spotify Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-white">
+  <div class="flex h-screen">
+   <!-- Sidebar -->
+   <div class="w-64 bg-gray-800 p-6">
+    <div class="text-2xl font-bold mb-8">
+     Spotify
+    </div>
+    <ul>
+     <li class="mb-4">
+      <a class="flex items-center text-gray-400 hover:text-white" href="#">
+       <i class="fas fa-home mr-3">
+       </i>
+       Home
+      </a>
+     </li>
+     <li class="mb-4">
+      <a class="flex items-center text-gray-400 hover:text-white" href="#">
+       <i class="fas fa-search mr-3">
+       </i>
+       Search
+      </a>
+     </li>
+     <li class="mb-4">
+      <a class="flex items-center text-gray-400 hover:text-white" href="#">
+       <i class="fas fa-bookmark mr-3">
+       </i>
+       Your Library
+      </a>
+     </li>
+    </ul>
+    <div class="mt-8">
+     <div class="text-gray-400 mb-2">
+      Playlists
+     </div>
+     <ul>
+      <li class="mb-2">
+       <a class="text-gray-400 hover:text-white" href="#">
+        Discover Weekly
+       </a>
+      </li>
+      <li class="mb-2">
+       <a class="text-gray-400 hover:text-white" href="#">
+        Release Radar
+       </a>
+      </li>
+      <li class="mb-2">
+       <a class="text-gray-400 hover:text-white" href="#">
+        Daily Mix 1
+       </a>
+      </li>
+      <li class="mb-2">
+       <a class="text-gray-400 hover:text-white" href="#">
+        Daily Mix 2
+       </a>
+      </li>
+      <li class="mb-2">
+       <a class="text-gray-400 hover:text-white" href="#">
+        Daily Mix 3
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 p-6">
+    <div class="mb-8">
+     <h1 class="text-3xl font-bold mb-4">
+      Good Evening
+     </h1>
+     <div class="grid grid-cols-3 gap-4">
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+       <img alt="Album cover of a popular playlist" class="w-16 h-16 mr-4" height="60" src="https://storage.googleapis.com/a1aa/image/dZegNHgzaXR0XaIcWvNfUfAKbdfkicbxwA0kMMBVIi3Dpv7OB.jpg" width="60"/>
+       <div>
+        Top Hits
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+       <img alt="Album cover of a popular playlist" class="w-16 h-16 mr-4" height="60" src="https://storage.googleapis.com/a1aa/image/dZegNHgzaXR0XaIcWvNfUfAKbdfkicbxwA0kMMBVIi3Dpv7OB.jpg" width="60"/>
+       <div>
+        Chill Vibes
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+       <img alt="Album cover of a popular playlist" class="w-16 h-16 mr-4" height="60" src="https://storage.googleapis.com/a1aa/image/dZegNHgzaXR0XaIcWvNfUfAKbdfkicbxwA0kMMBVIi3Dpv7OB.jpg" width="60"/>
+       <div>
+        Workout Mix
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+       <img alt="Album cover of a popular playlist" class="w-16 h-16 mr-4" height="60" src="https://storage.googleapis.com/a1aa/image/dZegNHgzaXR0XaIcWvNfUfAKbdfkicbxwA0kMMBVIi3Dpv7OB.jpg" width="60"/>
+       <div>
+        Focus
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+       <img alt="Album cover of a popular playlist" class="w-16 h-16 mr-4" height="60" src="https://storage.googleapis.com/a1aa/image/dZegNHgzaXR0XaIcWvNfUfAKbdfkicbxwA0kMMBVIi3Dpv7OB.jpg" width="60"/>
+       <div>
+        Party
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+       <img alt="Album cover of a popular playlist" class="w-16 h-16 mr-4" height="60" src="https://storage.googleapis.com/a1aa/image/dZegNHgzaXR0XaIcWvNfUfAKbdfkicbxwA0kMMBVIi3Dpv7OB.jpg" width="60"/>
+       <div>
+        Jazz
+       </div>
+      </div>
+     </div>
+    </div>
+    <div>
+     <h2 class="text-2xl font-bold mb-4">
+      Recently Played
+     </h2>
+     <div class="grid grid-cols-5 gap-4">
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of a recently played song" class="w-full mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/iKXjl9lVVyryHFDCjdd1LS7hHFRHLN7O40dLoc4Hxpijed3JA.jpg" width="150"/>
+       <div>
+        Song Title 1
+       </div>
+       <div class="text-gray-400">
+        Artist 1
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of a recently played song" class="w-full mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/iKXjl9lVVyryHFDCjdd1LS7hHFRHLN7O40dLoc4Hxpijed3JA.jpg" width="150"/>
+       <div>
+        Song Title 2
+       </div>
+       <div class="text-gray-400">
+        Artist 2
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of a recently played song" class="w-full mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/iKXjl9lVVyryHFDCjdd1LS7hHFRHLN7O40dLoc4Hxpijed3JA.jpg" width="150"/>
+       <div>
+        Song Title 3
+       </div>
+       <div class="text-gray-400">
+        Artist 3
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of a recently played song" class="w-full mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/iKXjl9lVVyryHFDCjdd1LS7hHFRHLN7O40dLoc4Hxpijed3JA.jpg" width="150"/>
+       <div>
+        Song Title 4
+       </div>
+       <div class="text-gray-400">
+        Artist 4
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of a recently played song" class="w-full mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/iKXjl9lVVyryHFDCjdd1LS7hHFRHLN7O40dLoc4Hxpijed3JA.jpg" width="150"/>
+       <div>
+        Song Title 5
+       </div>
+       <div class="text-gray-400">
+        Artist 5
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of a recently played song" class="w-full mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/iKXjl9lVVyryHFDCjdd1LS7hHFRHLN7O40dLoc4Hxpijed3JA.jpg" width="150"/>
+       <div>
+        Song Title 6
+       </div>
+       <div class="text-gray-400">
+        Artist 6
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of a recently played song" class="w-full mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/iKXjl9lVVyryHFDCjdd1LS7hHFRHLN7O40dLoc4Hxpijed3JA.jpg" width="150"/>
+       <div>
+        Song Title 7
+       </div>
+       <div class="text-gray-400">
+        Artist 7
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of a recently played song" class="w-full mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/iKXjl9lVVyryHFDCjdd1LS7hHFRHLN7O40dLoc4Hxpijed3JA.jpg" width="150"/>
+       <div>
+        Song Title 8
+       </div>
+       <div class="text-gray-400">
+        Artist 8
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of a recently played song" class="w-full mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/iKXjl9lVVyryHFDCjdd1LS7hHFRHLN7O40dLoc4Hxpijed3JA.jpg" width="150"/>
+       <div>
+        Song Title 9
+       </div>
+       <div class="text-gray-400">
+        Artist 9
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of a recently played song" class="w-full mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/iKXjl9lVVyryHFDCjdd1LS7hHFRHLN7O40dLoc4Hxpijed3JA.jpg" width="150"/>
+       <div>
+        Song Title 10
+       </div>
+       <div class="text-gray-400">
+        Artist 10
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of a recently played song" class="w-full mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/iKXjl9lVVyryHFDCjdd1LS7hHFRHLN7O40dLoc4Hxpijed3JA.jpg" width="150"/>
+       <div>
+        Song Title 11
+       </div>
+       <div class="text-gray-400">
+        Artist 11
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of a recently played song" class="w-full mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/iKXjl9lVVyryHFDCjdd1LS7hHFRHLN7O40dLoc4Hxpijed3JA.jpg" width="150"/>
+       <div>
+        Song Title 12
+       </div>
+       <div class="text-gray-400">
+        Artist 12
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of a recently played song" class="w-full mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/iKXjl9lVVyryHFDCjdd1LS7hHFRHLN7O40dLoc4Hxpijed3JA.jpg" width="150"/>
+       <div>
+        Song Title 13
+       </div>
+       <div class="text-gray-400">
+        Artist 13
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of a recently played song" class="w-full mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/iKXjl9lVVyryHFDCjdd1LS7hHFRHLN7O40dLoc4Hxpijed3JA.jpg" width="150"/>
+       <div>
+        Song Title 14
+       </div>
+       <div class="text-gray-400">
+        Artist 14
+       </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of a recently played song" class="w-full mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/iKXjl9lVVyryHFDCjdd1LS7hHFRHLN7O40dLoc4Hxpijed3JA.jpg" width="150"/>
+       <div>
+        Song Title 15
+       </div>
+       <div class="text-gray-400">
+        Artist 15
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
